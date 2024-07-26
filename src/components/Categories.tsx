@@ -20,12 +20,14 @@ export default function Categories({
   Cat:any
 }) {
   return (
+    // style= {tw`flex-1  `}
     <Animated.View entering={FadeInDown.duration(500).springify()}  >
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
         // style={{gap:4}}
-        contentContainerStyle={[{ paddingHorizontal: 15 }, tw`gap-x-4  `]}
+        contentContainerStyle={[{ paddingHorizontal: 15 }, tw`gap-x-4 `]}
+        
       >
         {Cat.map((cat:any, index:any) => {
             let isActive=cat.strCategory==activecat

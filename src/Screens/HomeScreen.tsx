@@ -29,7 +29,7 @@ export default function Home() {
       console.log('err', err.message);
     }
   };
-  const [activecat,setActivecat]=useState('Ukha')
+  const [activecat,setActivecat]=useState('Beef')
   return (
     <View style={tw`flex-1 bg-white `}>
       <StatusBar style="dark" />
@@ -94,7 +94,7 @@ export default function Home() {
           </View>
       
 {/* for recepies */}
-<View><Recepies/></View>
+<View><Recepies Cat={Cat}/></View>
       </ScrollView>
     </View>
   );
